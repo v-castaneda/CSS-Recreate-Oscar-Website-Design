@@ -1,0 +1,43 @@
+* {
+    border: 1px solid gray;
+    border-color: black;
+}
+
+/* Setting variables */
+:root {
+  --div-height-small: 50px;
+  --div-height-large: 150px;
+}
+
+/* Large screen settings */
+@media (min-width: 800px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+  }
+
+  ul {
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+
+  .a {
+     min-height: 50px;
+     width: 100%;
+  }
+  
+  .b {
+    min-height: var(--div-height-large);
+    flex-grow: 4;
+  }
+  
+  .c {
+    min-height: var(--div-height-large);
+    flex-grow: 1;
+  }
+}
